@@ -29,7 +29,14 @@ curl -X POST "https://127.0.0.1.xip.io/api/v1/users/d19bff36-4733-11e5-946b-9ba9
 ```
 
 This endpoint allows for uploading of documents from a users mobile phone.  The documents are then submitted
-for review by the complaince team.
+for review by the complaince team.  The encoding type needs to be multipart/form-data.  The file needs to be
+the equivalent of a input type of file with a name of file:
+
+```html
+<form method="POST" enctype="multipart/form-data">
+   <input type="file" name="file">
+</form>
+```
 
 ### HTTP Request
 
