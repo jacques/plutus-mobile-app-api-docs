@@ -14,6 +14,7 @@ includes:
   - documents
   - wallets
   - debitcards
+  - beneficiaries
   - errors
 
 search: true
