@@ -11,10 +11,12 @@ toc_footers:
 
 includes:
   - authentication
+  - users
   - documents
   - wallets
   - debitcards
   - beneficiaries
+  - diallers
   - errors
 
 search: true
