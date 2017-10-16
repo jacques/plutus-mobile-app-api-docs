@@ -53,8 +53,22 @@ USER | The UUID of the user who you want to upload a document for
 Parameter | Type | Description
 --------- | ---- | -----------
 uuid | string (36) | UUID of the document
-document_type | integer | Indicates the type of document.  1 == Proof of Identification (South African ID / Passport / South African Asylum Document). 2 == Proof of address.  3 == Proof of Income.  4 == Application Form.  5 == Proof of Employment.  6 == Selfie. 7 == Affidavit. 9 == Home Visit. 10 == Proof of Payment (i.e. deposit slip / atm slip / payslip / etc.)
+document_type | integer | Indicates the type of document.  See <a href="#document-types">Document Types</a> below.
 file_name | string (255) | File name including a random uuid at the front of the file name
 file_hash | string (255) | sha256 of the uploaded file
 file_size | integer | Size of the uploaded file
 created_at | datetime | Datetime in GMT that the file was uploaded
+
+### Document Types
+
+Value | Description
+----- | -----------
+1     | Proof of Identification (South African ID / Passport / South African Asylum Document) (POID)
+2     | Proof of Address (POA)
+3     | Proof of Income (POI)
+4     | Application Form
+5     | Proof of Employment
+6     | Selfie
+7     | Affidavit
+9     | Home Visit
+10    | Proof of Payment (Deposit Slip / AMT Slip / Pay slip / Bank POP)
