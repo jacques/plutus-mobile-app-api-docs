@@ -16,7 +16,9 @@ includes:
   - wallets
   - debitcards
   - beneficiaries
+  - standingorders
   - diallers
+  - prepaid
   - errors
 
 search: true
