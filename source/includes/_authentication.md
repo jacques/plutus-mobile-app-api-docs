@@ -1,6 +1,16 @@
 # Authentication
 
-Pass in the `Authorization` header in with a `Token token=YOURTOKEN` as part of the HTTP request being sent into the API for processing.
+## Intial Login for a user
+
+After installing the mobile app, a user would request that they be allowed to login using their credentials.  On first login, a ssh keypair
+is generated on the users device and the public key pair is submitted along with the fingerprint over which is then associated with the user.
+Should the user have Two Factor Authentication enabled, the user will then enter their TFA to authorise the adding of the ssh key pair to
+their account.
+
+## Using Session Tokens
+
+Pass in the `Authorization` header in with a `Token token=YOURTOKEN` as part of the HTTP request being sent into the API for processing once you have
+created a session token for the user.
 
 > To authorize, use this code:
 
@@ -9,37 +19,6 @@ Pass in the `Authorization` header in with a `Token token=YOURTOKEN` as part of 
 curl "api_endpoint_here"
   -H "Authorization: Token token=YOURTOKEN"
   -H "Content-Type: application/json"
-```
-
-```php
-<?php
-...
-curl_setopt($this->_ch, CURLOPT_HTTPHEADER, [
-  'Authorization: Token token=' . $this->token,
-  'Content-Type: application/json',
-]);
-```
-
-```ruby
-request = Net::HTTP::Post.new('https://127.0.0.1.xip.io/api/v1/users')
-request['authorization'] = 'Token token=YOURTOKEN'
-request.content_type = "application/json"
-```
-
-```javascript
-request({
-    headers: {
-      'Authorization': 'Token token=YOURTOKEN',
-      'Content-Type': 'application/json'
-    },
-    uri: 'https://127.0.0.1.xip.io/api/v1/users',
-    method: 'GET'
-  }, function (err, res, body) {
-    //it works!
-  });
-```
-
-```java
 ```
 
 > Make sure to replace `YOURTOKEN` with your API key.
