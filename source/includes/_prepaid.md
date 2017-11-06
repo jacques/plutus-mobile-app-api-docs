@@ -12,7 +12,7 @@ Retreives a list of mobile network providers and fixed line providers who vend
 Prepaid Airtime Vouchers or Pinless Airtime Recharges.
 
 ```shell
-curl "https://127.0.0.1.xip.io/api/v1/prepaid/networks"
+curl "https://127.0.0.1.xip.io/api/v1/mobile/prepaid/networks"
   -H "Authorization: Token token=YOURTOKEN"
   -H "Content-Type: application/json"
 ```
@@ -22,28 +22,20 @@ curl "https://127.0.0.1.xip.io/api/v1/prepaid/networks"
   "status": "ok",
   "data": [
     {
-       "network_id": "1",
+       "network": "vodacom",
        "name": "Vodacom"
     },
     {
-       "network_id": "2",
+       "network": "mtn",
        "name": "MTN"
     },
     {
-       "network_id": "3",
+       "network": "cellc",
        "name": "CellC"
     },
     {
-       "network_id": "4",
+       "network": "virginmobile",
        "name": "Virgin Mobile"
-    },
-    {
-       "network_id": "5",
-       "name": "Neotel"
-    },
-    {
-       "network_id": "6",
-       "name": "Telkom Mobile (8ta)"
     }
   ]
 }
@@ -59,14 +51,55 @@ This endpoint retrieves the list of mobile networks.
 
 Parameter | Type | Description
 --------- | ----  | -----------
-network_id | integer | ID for the mobile network
+network | string(16) | Shortname for network
 name | string(36) | Name of the mobile network or virtual mobile network operator
+image | string(36) | Image for the logo of the mobile network for use with resizing of the logo
 
 ## List available vouchers for a network
 
 Retreive a list of available airtime vouchers for the provide mobile network.
 
 
+```shell
+curl "https://127.0.0.1.xip.io/api/v1/mobile/prepaid/vouchers/vodacom"
+  -H "Authorization: Token token=YOURTOKEN"
+  -H "Content-Type: application/json"
+```
+
+```json
+{
+  "status": "ok",
+  "data": [
+    {
+      "voucher_code":"VOD000005",
+      "description":"Vodacom - R 5",
+      "voucher_cost_to_client":"500"
+    },
+    {
+      "voucher_code":"VOD000010",
+      "description":"Vodacom - R 10",
+      "voucher_cost_to_client":"1000"
+    },
+    {
+      "voucher_code":"VOD000012",
+      "description":"Vodacom - R 12",
+      "voucher_cost_to_client":"1200"
+    }
+  ]
+}
+```
+
+### HTTP Request
+
+`GET https://127.0.0.1.xip.io/api/v1/mobile/prepaid/vouchers/<NETWORK>`
+
+### Response Result Set
+
+Parameter | Type | Description
+--------- | ----  | -----------
+network | string(16) | Shortname for network
+name | string(36) | Name of the mobile network or virtual mobile network operator
+image | string(36) | Image for the logo of the mobile network for use with resizing of the logo
 
 
 ## Purchase Prepaid Airtime
