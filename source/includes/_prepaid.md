@@ -23,19 +23,23 @@ curl "https://127.0.0.1.xip.io/api/v1/mobile/prepaid/networks"
   "data": [
     {
        "network": "vodacom",
-       "name": "Vodacom"
+       "name": "Vodacom",
+       "image": "/images/mobiapp/vodacom.jpg"
     },
     {
        "network": "mtn",
-       "name": "MTN"
+       "name": "MTN",
+       "image": "/images/mobiapp/mtn.png"
     },
     {
        "network": "cellc",
-       "name": "CellC"
+       "name": "CellC",
+       "image": "/images/mobiapp/cellc.png"
     },
     {
        "network": "virginmobile",
-       "name": "Virgin Mobile"
+       "name": "Virgin Mobile",
+       "image": "/images/mobiapp/virginmobile.png"
     }
   ]
 }
