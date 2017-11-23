@@ -34,6 +34,7 @@ curl "https://127.0.0.1.xip.io/api/v1/mobile/users/d19bff36-4733-11e5-946b-9ba90
       "account_number": "44445555666",
       "description": "Tim's Wallet",
       "account_type": "wallet",
+      "currency": "710",
       "balance": "123456"
     }
   ]
@@ -60,6 +61,7 @@ uuid | string (36) | UUID of the wallet
 account_number | integer | Account number for the wallet
 description | string (64) | Description of the wallet (i.e Firstname's Wallet)
 account_type | enum | `wallet` for wallet
+currency | integer | ISO4217 Code Number
 balance | integer | balance of the wallet in cents
 
 ## Fetching a mini statement for a users wallet
