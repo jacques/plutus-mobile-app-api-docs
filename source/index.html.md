@@ -11,14 +11,19 @@ toc_footers:
 
 includes:
   - authentication
+  - config
+  - ads
   - users
   - documents
   - wallets
   - debitcards
   - beneficiaries
+  - p2ppayments
   - standingorders
   - diallers
   - prepaid
+  - agentterminal
+  - forex
   - errors
 
 search: true
