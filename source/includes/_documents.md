@@ -9,6 +9,7 @@ customers as part of the process of KYC / FICA.
 curl -X POST "https://127.0.0.1.xip.io/api/v1/users/d19bff36-4733-11e5-946b-9ba904d8238e/documents"
   -H "Authorization: Token token=YOURTOKEN"
   -H "Content-Type: application/json"
+  -d '{"document_type":"1"}'
   -F=@FILE.pdf
 ```
 
