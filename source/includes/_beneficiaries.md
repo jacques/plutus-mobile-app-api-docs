@@ -68,7 +68,8 @@ uuid | string (36) | UUID of the beneficiary
 name      | string(32) | Users name for the recipient (i.e. Telkom - Home Phone)
 bank_id   | integer | Bank Idenfier
 branch_code | integer | Branch code for the bank account of the beneficiary - where possible please use the banks universal branch code
-account_number | integer | Bank Account Number for the beneficiary typically 9 to 11 digits in length
+account_number | integer | Bank Account Number for the beneficiary typically 9 to 11 digits in length for South Africa.  11 to 14 digits in length for Botswana.
+account_type | integer | Bank Account Type (1 = Current / Cheque | 2 = Savings | 3 = Transmission)
 reference1 | string(32) | Users reference for their account transaction list when making the payment
 reference2 | string(32) | Reference displayed on the beneficiaries bank transaction list
 
@@ -110,7 +111,8 @@ Parameter | Type | Description
 name      | string(32) | Users name for the recipient (i.e. Telkom - Home Phone)
 bank_id   | integer | Bank Idenfier
 branch_code | integer | Branch code for the bank account of the beneficiary - where possible please use the banks universal branch code
-account_number | integer | Bank Account Number for the beneficiary typically 9 to 11 digits in length
+account_number | integer | Bank Account Number for the beneficiary typically 9 to 11 digits in length for South Africa.  11 to 14 digits in length for Botswana.
+account_type | integer | Bank Account Type (1 = Current / Cheque | 2 = Savings | 3 = Transmission)
 reference1 | string(32) | Users reference for their account transaction list when making the payment
 reference2 | string(32) | Reference displayed on the beneficiaries bank transaction list
 notification_email_address | string(64) | Email address to send the notification of payment PDF to after paying the beneficiary
