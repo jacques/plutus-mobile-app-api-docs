@@ -17,6 +17,7 @@ includes:
   - documents
   - wallets
   - debitcards
+  - giftvouchers
   - beneficiaries
   - p2ppayments
   - standingorders
