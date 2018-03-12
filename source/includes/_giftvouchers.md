@@ -21,6 +21,7 @@ curl "https://127.0.0.1.xip.io/api/v1/mobile/users/d19bff36-4733-11e5-946b-9ba90
       "uuid": "ecb23a8c-99dd-11e4-912d-ef2aab9046d8",
       "description": "Freedom Connect R300 Gift Voucher",
       "currency": "710",
+      "amount": "30000",
       "balance": "30000"
     }
   ]
@@ -46,4 +47,5 @@ Parameter | Type | Description
 uuid | string (36) | UUID of the gift voucher
 description | string (64) | Description of the gift voucher
 currency | integer | ISO4217 Code Number
+amount | integer | value originally provided with the gift voucher in cents
 balance | integer | balance of the gift voucher in cents
