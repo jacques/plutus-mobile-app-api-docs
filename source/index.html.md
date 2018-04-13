@@ -24,8 +24,8 @@ includes:
   - diallers
   - prepaid
   - agentterminal
-  - forex
   - errors
+  - changelog
 
 search: true
 ---
