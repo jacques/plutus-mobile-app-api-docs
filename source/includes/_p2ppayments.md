@@ -4,6 +4,15 @@ Person to Person Payments are used to make a once off payment to another person
 who has an account on the platform from one onnet account to another onnet
 account.
 
+The process works simiarily to:
+
+ * Recipient:
+    - Request P2P Payment
+    - Enter the reference for own transaction history
+    - Enter an amount
+ * Payer:
+    - Enter the reference for own account transaction history
+
 ## Perform a P2P Payment
 
 ```shell
