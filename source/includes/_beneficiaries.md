@@ -160,9 +160,117 @@ Parameter | Description
 --------- | -----------
 amount | Amount of money to transfer to the user in cents
 
+## Pay a Beneficiary (Once off)
+
+This endpoint processes a once off payment to the beneficiary details provided.
+
+### HTTP Request
+
+`POST https://127.0.0.1.xip.io/api/v1/users/<USER>/beneficiaries/onceoff`
+
+```shell
+curl -X POST -d '{"name":"Vendor Name","bank_id":"1","branch_code":"000000","account_number":"53220000024","account_type":"1","reference1":"Vendor Name","reference2":"My Bill ID","notification_email_address":"support@imogo.co.za","notifcation_mobile_number":"","amount":"10000"}' "https://127.0.0.1.xip.io/api/v1/users/d19bff36-4733-11e5-946b-9ba904d8238e/beneficiaries/onceoff"
+  -H "Authorization: Token token=YOURTOKEN"
+  -H "Content-Type: application/json"
+```
+
+> The above command returns JSON structured like this:
+
+```json
+{
+    "status": "ok",
+    "details": {
+        "uuid": "80d907f3-4f6f-4443-bafc-d1165509da61"
+    }
+}
+```
+
+### URL Parameters
+
+Parameter | Description
+--------- | -----------
+USER | The UUID of the user
+
+### JSON Payload Parameters
+
+Parameter | Type | Description
+--------- | ---- | -----------
+name      | string(32) | Users name for the recipient (i.e. Telkom - Home Phone)
+bank_id   | integer | Bank Idenfier
+branch_code | integer | Branch code for the bank account of the beneficiary - where possible please use the banks universal branch code
+account_number | integer | Bank Account Number for the beneficiary typically 9 to 11 digits in length for South Africa.  11 to 14 digits in length for Botswana.
+account_type | integer | Bank Account Type (1 = Current / Cheque | 2 = Savings | 3 = Transmission)
+reference1 | string(32) | Users reference for their account transaction list when making the payment
+reference2 | string(32) | Reference displayed on the beneficiaries bank transaction list
+notification_email_address | string(64) | Email address to send the notification of payment PDF to after paying the beneficiary
+notification_mobile_number | string(32) | Mobile phone number to send the notification of payment SMS to
+amount | integer | Amount to pay the beneficiary in cents
+
+## Pay a Beneficiary (By Mobile Number)
+
+This endpoint creates a payment to specific mobile number into their mobile wallet or creates a mobile wallet for the user and sends a SMS to the user.
+
+### HTTP Request
+
+`POST https://127.0.0.1.xip.io/api/v1/users/<USER>/beneficiaries/msisdn`
+
+```shell
+curl -X POST -d '{"msisdn":"27811234567","reference1":"Bob Lunch","reference2":"Ted Lunch","amount":"10000"}' "https://127.0.0.1.xip.io/api/v1/users/d19bff36-4733-11e5-946b-9ba904d8238e/beneficiaries/onceoff"
+  -H "Authorization: Token token=YOURTOKEN"
+  -H "Content-Type: application/json"
+```
+
+> The above command returns JSON structured like this:
+
+```json
+{
+    "status": "ok",
+    "details": {
+        "uuid": "80d907f3-4f6f-4443-bafc-d1165509da61"
+    }
+}
+```
+
+This endpoint creates the specified beneficiary for the specific user.
+
+### HTTP Request
+
+`GET https://127.0.0.1.xip.io/api/v1/users/<UUID>`
+
+### URL Parameters
+
+Parameter | Description
+--------- | -----------
+USER | The UUID of the user the beneficiary belongs to
+
+### JSON Payload Parameters
+
+Parameter | Type | Description
+--------- | ---- | -----------
+name      | string(32) | Users name for the recipient (i.e. Telkom - Home Phone)
+bank_id   | integer | Bank Idenfier
+branch_code | integer | Branch code for the bank account of the beneficiary - where possible please use the banks universal branch code
+account_number | integer | Bank Account Number for the beneficiary typically 9 to 11 digits in length for South Africa.  11 to 14 digits in length for Botswana.
+account_type | integer | Bank Account Type (1 = Current / Cheque | 2 = Savings | 3 = Transmission)
+reference1 | string(32) | Users reference for their account transaction list when making the payment
+reference2 | string(32) | Reference displayed on the beneficiaries bank transaction list
+notification_email_address | string(64) | Email address to send the notification of payment PDF to after paying the beneficiary
+notification_mobile_number | string(32) | Mobile phone number to send the notification of payment SMS to
+
+### URL Parameters
+
+Parameter | Description
+--------- | -----------
+USER | The UUID of the user the beneficiary belongs to
+
+### POST Parameters
+
+Parameter | Description
+--------- | -----------
+
+amount | Amount of money to transfer to the user in cents
+
 ## List Public Beneficaries
-
-
 
 ```shell
 curl "https://127.0.0.1.xip.io/api/v1/predefinedbeneficaries/WOO"
