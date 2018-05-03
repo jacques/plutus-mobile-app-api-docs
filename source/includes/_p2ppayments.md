@@ -2,7 +2,7 @@
 
 Person to Person Payments are used to make a once off payment to another person
 who has an account on the platform from one onnet account to another onnet
-account.
+account using a QR Code to provide the payer the ability to pay the payee.
 
 The process works simiarily to:
 
@@ -12,6 +12,30 @@ The process works simiarily to:
     - Enter an amount
  * Payer:
     - Enter the reference for own account transaction history
+
+## Request a P2P Payment
+
+Performed before showing the QR Code so we can get the request showing for the user of their requested payments and if it was paid.
+
+```shell
+curl -X POST "https://127.0.0.1.xip.io/api/v1/users/d19bff36-4733-11e5-946b-9ba904d8238e/p2ppayments/request"
+  -H "Authorization: Token token=YOURTOKEN"
+  -H "Content-Type: application/json"
+```
+
+> The above command returns JSON structured like this:
+
+
+```json
+{
+  "status": "ok",
+  "details":
+    {
+      "uuid": ""
+    }
+  ]
+}
+```
 
 ## Perform a P2P Payment
 
