@@ -312,7 +312,7 @@ curl "https://127.0.0.1.xip.io/api/v1/predefinedbeneficaries/WOO"
 ## List Banks (for use when creating a beneficiary)
 
 ```shell
-curl "https://127.0.0.1.xip.io/api/v1/banks"
+curl "https://127.0.0.1.xip.io/api/v1/mobile/banks"
   -H "Authorization: Token token=YOURTOKEN"
   -H "Content-Type: application/json"
 ```
