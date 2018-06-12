@@ -3,19 +3,14 @@
 There are a number of things to cater for with Forex.
 
  * Destination countries coming online.  For the testing of the app we are using:
-    - Mozambique
-    - Zimbabwe
+    - Bangladesh
+    - Botswana
+    - Kenya
 
 ## List Forex Recipients
 
 
 ## Registering a Forex Receipient
-
-
-
-
-
-
 
 This endpoint retrieves a collection of recipients including their status of whether the recipient has
 been approved for receiving forex.  Only approved users can receive forex so users in the pending state

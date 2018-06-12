@@ -20,9 +20,11 @@ includes:
   - giftvouchers
   - beneficiaries
   - p2ppayments
+  - forex
   - standingorders
-  - diallers
+  - dialers
   - prepaid
+  - companies
   - agentterminal
   - errors
   - changelog
