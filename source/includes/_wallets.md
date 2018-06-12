@@ -98,7 +98,7 @@ curl "https://127.0.0.1.xip.io/api/v1/mobile/users/d19bff36-4733-11e5-946b-9ba90
 }
 ```
 
-This endpoint retrieves a mini statement for the specific users wallet.
+This endpoint retrieves a mini statement for the specific users wallet for the past six months worth of transactions.
 
 ### HTTP Request
 
@@ -158,7 +158,7 @@ curl "https://127.0.0.1.xip.io/api/v1/mobile/users/d19bff36-4733-11e5-946b-9ba90
 }
 ```
 
-This endpoint retrieves a specific user.
+This endpoint retrieves a specific user users transactions for the past six months worth of transactions.
 
 ### HTTP Request
 
