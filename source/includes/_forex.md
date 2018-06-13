@@ -92,9 +92,30 @@ For a recipient to be able to receive a remittance, we need to have various docu
 
 ## List of Target Countries
 
+```shell
+curl -X GET "https://127.0.0.1.xip.io/api/v1/mobile/forex/countries"
+  -H "Authorization: Token token=YOURTOKEN"
+  -H "Content-Type: application/json"
+```
+
 ### HTTP Request
 
 `GET https://127.0.0.1.xip.io/api/v1/mobile/forex/countries`
+
+> The above command returns JSON structured like this:
+
+```json
+{
+  "status":"ok",
+  "details":[
+    {"country_name":"Bangladesh","tld":"BD"},
+    {"country_name":"Botswana","tld":"BW"},
+    {"country_name":"Malawi","tld":"MW"},
+    {"country_name":"Mozambique","tld":"MZ"},
+    {"country_name":"Zimbabwe","tld":"ZW"}
+  ]
+}
+```
 
 ## List of Target Banks By Target Country
 
