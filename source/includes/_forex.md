@@ -3,11 +3,25 @@
 There are a number of things to cater for with Forex.
 
  * Destination countries coming online.  For the testing of the app we are using:
-    - Bangladesh
-    - Botswana
-    - Kenya
+    - Bangladesh (BD)
+    - Botswana (BW)
+    - Malawi (MW)
+    - Mozambique (MZ)
+    - Zimbabwe (ZW)
 
 ## List Forex Recipients
+
+This endpoint retrieves a collection of recipients for sending forex to.  These users have been
+added as recipients for the user.
+
+
+
+### HTTP Request
+
+`POST https://127.0.0.1.xip.io/api/v1/mobile/users/<USER>/forex/recipients`
+
+
+
 
 
 ## Registering a Forex Receipient
@@ -74,3 +88,16 @@ uuid | string (36) | UUID of the recipient
 ## Uploading a Forex Recipients Documentation
 
 For a recipient to be able to receive a remittance, we need to have various documents uploaded for vetting by our Forex Team as well as the Forex Maker, Reserve Bank, etc. as well as for Anti Money Laundering (AML) purposes.
+
+
+## List of Target Countries
+
+### HTTP Request
+
+`GET https://127.0.0.1.xip.io/api/v1/mobile/forex/countries`
+
+## List of Target Banks By Target Country
+
+### HTTP Request
+
+`GET https://127.0.0.1.xip.io/api/v1/mobile/forex/banks/<COUNTRYCODE>`
