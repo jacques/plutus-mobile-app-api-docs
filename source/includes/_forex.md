@@ -11,20 +11,52 @@ There are a number of things to cater for with Forex.
 
 ## List Forex Recipients
 
+```shell
+curl -X GET "https://127.0.0.1.xip.io/api/v1/mobile/users/c3797604-6e78-486e-be5d-433f80cc4993/forex"
+  -H "Authorization: Token token=YOURTOKEN"
+  -H "Content-Type: application/json"
+```
+
 This endpoint retrieves a collection of recipients for sending forex to.  These users have been
 added as recipients for the user.
 
-
-
 ### HTTP Request
 
-`POST https://127.0.0.1.xip.io/api/v1/mobile/users/<USER>/forex/recipients`
+`GET https://127.0.0.1.xip.io/api/v1/mobile/users/<USER>/forex/recipients`
 
+> The above command returns JSON structured like this:
 
+```json
+{
+  "status":"ok",
+  "details":[
+    {
+      "uuid":"72d11c48-a565-4731-8915-462084ee0a9f",
+      "first_name":"Timothy",
+      "middle_name":"Michael",
+      "last_name":"Colman"
+    }
+  ]
+}
+```
 
+### Response Result Set
 
+Parameter | Type | Description
+--------- | ---- | -----------
+uuid | string (36) | UUID of the document
+first_name | string (255) | First name of the recipient
+middle_name | string (255) | Middle name of the recipient
+last_name | string (255) | Surname of the recipient
 
 ## Registering a Forex Receipient
+
+```shell
+curl -X POST "https://127.0.0.1.xip.io/api/v1/mobile/users/c3797604-6e78-486e-be5d-433f80cc4993/forex"
+  -H "Authorization: Token token=YOURTOKEN"
+  -H "Content-Type: application/json"
+  -d '{"first_name":"Joe","middle_name":"Joe","last_name":"Soap","country":"ZAF","account_number":"12345678912","address_street1":"1st Floor, Allianz House","address_street2":"52 St George\'s Mall","city":"Cape Town","postal_code":"8000","date_of_birth":"1969-01-01","birth_country":"ZAF","primary_identification_number":"1234567890123456":"passport_number":"BOB1234","passport_expiry_date":"2020-01-01":"passport_issue_country":"ZAF","passport_line_1":">>>...","passport_line_2":">>>....","primary_mobile_number":"2712345679","deposit_taker":"Test Bank":"deposit_taker_swift":"TESTZAJJ","iban":"TESTZAJJ123456789012","name_of_father":"Tim Soap","name_of_mother":"Gina Soap nee Tutu","name_of_spouse":"Lulu Soap nee Tshwane","profession":"Driver","employer_name":"Example Company","employer_contact_name":"Tim Colman","employer_contact_number":"2721100008","previous_employer_name":"Mr D","previous_employer_contact_name":"Mr Bob","previous_employer_contact_number":"27111111111"}'
+```
 
 This endpoint retrieves a collection of recipients including their status of whether the recipient has
 been approved for receiving forex.  Only approved users can receive forex so users in the pending state
@@ -89,14 +121,6 @@ uuid | string (36) | UUID of the recipient
 
 For a recipient to be able to receive a remittance, we need to have various documents uploaded for vetting by our Forex Team as well as the Forex Maker, Reserve Bank, etc. as well as for Anti Money Laundering (AML) purposes.
 
-
-# Documents
-
-As part of the regulatory requirements, documentation is collected from
-customers as part of the process of KYC / FICA.
-
-## Upload a Document
-
 ```shell
 curl -X POST "https://127.0.0.1.xip.io/api/v1/users/d19bff36-4733-11e5-946b-9ba904d8238e/forex/2c4e5c4c-043b-4e1f-82e9-ad506dba2212/documents"
   -H "Authorization: Token token=YOURTOKEN"
@@ -133,7 +157,7 @@ the equivalent of a input type of file with a name of file:
 
 ### HTTP Request
 
-`POST https://127.0.0.1.xip.io/api/v1/mobile/users/<USER>/documents`
+`POST https://127.0.0.1.xip.io/api/v1/mobile/users/<USER>/forex/<BENEFICIARY>/documents`
 
 ### URL Parameters
 
