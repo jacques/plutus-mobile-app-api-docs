@@ -9,6 +9,9 @@ There are a number of things to cater for with Forex.
     - Mozambique (MZ)
     - Zimbabwe (ZW)
 
+Destination cashout points pending from Tim which may replace the requirement for a Swift Code
+and use a destination location identifier.
+
 ## List Forex Recipients
 
 ```shell
