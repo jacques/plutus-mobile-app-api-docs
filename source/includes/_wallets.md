@@ -134,27 +134,23 @@ curl "https://127.0.0.1.xip.io/api/v1/mobile/users/d19bff36-4733-11e5-946b-9ba90
 ```json
 {
   "status": "ok",
-  "details": {
-    "account: {
+  "details": [
+    {
+      "txn_ref": "alc80075",
+      "statement_date": "2015-02-19",
+      "reference1": "EFT IN FEE",
+      "reference2": "REF: 0801234567",
+      "amount": "-90"
     },
-    "transactions": [
-      {
-        "txn_ref": "alc80075",
-        "statement_date": "2015-02-19",
-        "reference1": "EFT IN FEE",
-        "reference2": "REF: 0801234567",
-        "amount": "-90"
-      },
-      {
-        "txn_ref": "61hk1xyo",
-        "statement_date": "2015-02-19",
-        "reference1": "CREDIT TRANSFER",
-        "reference2": "0801234567",
-        "amount": "50000"
-      },
-      ...
-    ]
-  }
+    {
+      "txn_ref": "61hk1xyo",
+      "statement_date": "2015-02-19",
+      "reference1": "CREDIT TRANSFER",
+      "reference2": "0801234567",
+      "amount": "50000"
+    },
+    ...
+  ]
 }
 ```
 
