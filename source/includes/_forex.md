@@ -55,7 +55,7 @@ last_name | string (255) | Surname of the recipient
 curl -X POST "https://127.0.0.1.xip.io/api/v1/mobile/users/c3797604-6e78-486e-be5d-433f80cc4993/forex"
   -H "Authorization: Token token=YOURTOKEN"
   -H "Content-Type: application/json"
-  -d '{"first_name":"Joe","middle_name":"Joe","last_name":"Soap","country":"ZAF","account_number":"12345678912","address_street1":"1st Floor, Allianz House","address_street2":"52 St George\'s Mall","city":"Cape Town","postal_code":"8000","date_of_birth":"1969-01-01","birth_country":"ZAF","primary_identification_number":"1234567890123456":"passport_number":"BOB1234","passport_expiry_date":"2020-01-01":"passport_issue_country":"ZAF","passport_line_1":">>>...","passport_line_2":">>>....","primary_mobile_number":"2712345679","deposit_taker":"Test Bank":"deposit_taker_swift":"TESTZAJJ","iban":"TESTZAJJ123456789012","name_of_father":"Tim Soap","name_of_mother":"Gina Soap nee Tutu","name_of_spouse":"Lulu Soap nee Tshwane","profession":"Driver","employer_name":"Example Company","employer_contact_name":"Tim Colman","employer_contact_number":"2721100008","previous_employer_name":"Mr D","previous_employer_contact_name":"Mr Bob","previous_employer_contact_number":"27111111111"}'
+  -d '{"first_name":"Joe","middle_name":"Joe","last_name":"Soap","country":"ZAF","account_number":"12345678912","deposit_taker_swift":"TESTZAJJ"}'
 ```
 
 This endpoint retrieves a collection of recipients including their status of whether the recipient has
@@ -82,34 +82,7 @@ middle_name | string(64)
 last_name | string(64)
 country   | string(2) | ISO Country Code (i.e. BD for Bangladesh)
 account_number | numberic | Account Number of the Recipient
-currency_code | string(3) | ISO Currency Code (i.e. BDT for Bangladeshi Taka)
-address_street1 | string(255) | Address
-address_street2 | string(255) | Address
-city | string(255) | City
-postal_code | string(255) | Postal Code
-date_of_birth | date | ISO DATE (i.e YYYY-MM-DD)
-birth_city | string(255) | City of birth
-birth_country | string(2) | ISO Country Code (i.e. BD for Bangladesh)
-primary_identification_number | string(255) |
-passport_number | string(255) |
-passport_expiry_date | date | (i.e. YYYY-MM-DD)
-passport_issue_country | string(3) | Country which issued the passport
-passport_line_1 | string(255) | Machine Readable Zone Line 1
-passport_line_2 | string(255) | Machine Readable Zone Line 2
-primary_mobile_number | string(32) | Primary Mobile Number of the user (i.e. 27821234567 without a +)
-deposit_taker | string(36) | UUID of the deposit taker configured on Plutus
 deposit_taker_swift | string(16) | SWIFT Code of the Deposit Taker
-iban | string(255) | IBAN for the account
-name_of_father | string(255) | Name of father
-name_of_mother | string(255) | Name of mother i.e. Jane Soap nee Doe
-name_of_spouse | string(255) | Name of spouse
-profession | string(255) | Profession of the recipient
-employer_name | string(255) | Name of the current employer
-employer_contact_name | string(255) | Name of the contact at the current employer
-employer_contact_number | string(32) | Phone number for the current employer contact person
-previous_employer_name | string(255) | Name of the previous employer
-previous_employer_contact_name | string(255) | Name of the contact at the previous employer
-previous_employer_contact_number | string(32) | Phone number for the previous employer contact person
 
 ### Response Result Set
 
