@@ -16,6 +16,7 @@ includes:
   - documents
   - wallets
   - debitcards
+  - transfers
   - beneficiaries
   - p2ppayments
   - forex
