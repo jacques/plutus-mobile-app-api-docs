@@ -2,6 +2,11 @@
 
 The changelog mentions items changed in the documentation.
 
+## 2018-07-12
+
+ * Removed the BongoTel Dialer issuing / listing.
+ * Removed the recharging the BongoTel Dialer.
+
 ## 2018-06-13
 
  * <a href="#list-forex-recipients">List Forex Recipients</a>
@@ -11,8 +16,8 @@ The changelog mentions items changed in the documentation.
 ## 2018-06-12
 
  * Removed various webviews for Prepaid, T&C's, etc as these are now being made native.
- * <a href="#list-dialers">List Dialers</a>
- * <a href="#issue-dialer">Issue Dialer</a>
+ * List Dialers
+ * Issue Dialer
  * <a href="#list-of-target-countries">List of Target Countries</a>
 
 ## 2018-04-13
