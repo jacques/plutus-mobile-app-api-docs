@@ -9,7 +9,8 @@ There are a number of different offerings on offer.
 ## List mobile networks
 
 Retreives a list of mobile network providers and fixed line providers who vend
-Prepaid Airtime Vouchers or Pinless Airtime Recharges.
+Prepaid Airtime Vouchers or Pinless Airtime Recharges.  Logos to be supplied
+by Danny.
 
 ```shell
 curl "https://127.0.0.1.xip.io/api/v1/mobile/prepaid/networks"
