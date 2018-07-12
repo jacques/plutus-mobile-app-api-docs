@@ -110,19 +110,10 @@ image | string(36) | Image for the logo of the mobile network for use with resiz
 
 ## List of Prepaid Airtime Networks Available
 
-## Purchase Prepaid BongoTel Airtime
-
-Allows a user to rechange their BongoTel phone airtime.
-
 ## Purchase Prepaid Electricity
 
 Purchases prepaid electricity for the provided meter number.  Please note that the current provider does not allow for prevending or meter information lookups.
 
-
-
 Text needs to be displayed that states "All vends are final.  Municipalities and Eskom do not allow reversals on the sale of Electricity.  Electricity is not sold subject to a cooling off period."
 
 (Check with Tim on the wording for this).
-
-
-
