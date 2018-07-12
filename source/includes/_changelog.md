@@ -6,6 +6,7 @@ The changelog mentions items changed in the documentation.
 
  * Removed the BongoTel Dialer issuing / listing.
  * Removed the recharging the BongoTel Dialer.
+ * <a href="#list-companies-user-has-access-to">List Companies User has access to</a>
 
 ## 2018-06-13
 
