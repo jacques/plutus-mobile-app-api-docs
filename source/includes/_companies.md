@@ -30,3 +30,24 @@ curl "https://127.0.0.1.xip.io/api/v1/mobile/companies"
   ]
 }
 ```
+
+## Get Company
+
+```shell
+curl "https://127.0.0.1.xip.io/api/v1/mobile/companies/ddfa9e8a-e6c6-11e5-826b-f733da52efd0"
+  -H "Authorization: Token token=YOURTOKEN"
+  -H "Content-Type: application/json"
+```
+
+> The above command returns JSON structured like this:
+
+```
+{
+  "status": "ok",
+  "details": {
+    "uuid": "ddfa9e8a-e6c6-11e5-826b-f733da52efd0",
+    "name": "KESTA GROUP",
+    "trading_as": "KESTA GROUP"
+  }
+}
+```

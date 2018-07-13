@@ -23,6 +23,7 @@ includes:
   - standingorders
   - prepaid
   - companies
+  - businessaccounts
 #  - agentterminal
   - errors
   - changelog
