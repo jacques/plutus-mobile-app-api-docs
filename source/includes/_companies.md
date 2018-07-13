@@ -15,17 +15,17 @@ curl "https://127.0.0.1.xip.io/api/v1/mobile/companies"
 
 ```json
 {
-  "status":"ok",
-  "details":[
+  "status": "ok",
+  "details": [
     {
-      "uuid":"ddfa9e8a-e6c6-11e5-826b-f733da52efd0",
-      "name":"KESTA GROUP",
-      "trading_as":"KESTA GROUP"
+      "uuid": "ddfa9e8a-e6c6-11e5-826b-f733da52efd0",
+      "name": "KESTA GROUP",
+      "trading_as": "KESTA GROUP"
     },
     {
-      "uuid":"91654406-071b-11e6-8598-0fffdf7fc583",
-      "name":"KESTA Dup",
-      "trading_as":"KESTA"
+      "uuid": "91654406-071b-11e6-8598-0fffdf7fc583",
+      "name": "KESTA Dup",
+      "trading_as": "KESTA"
     }
   ]
 }
