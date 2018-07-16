@@ -194,6 +194,12 @@ curl -X GET "https://127.0.0.1.xip.io/api/v1/mobile/forex/countries"
 }
 ```
 
+## List of Disbursement Points
+
+<aside class="warning">
+Please note Andre has not provided any information on the disbursement points or how this will work.  Needs to be circled back on.
+</aside>
+
 ## List of Target Banks By Target Country
 
 ### HTTP Request
