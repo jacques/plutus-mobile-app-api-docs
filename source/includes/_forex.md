@@ -12,6 +12,15 @@ There are a number of things to cater for with Forex.
 Destination cashout points pending from Tim which may replace the requirement for a Swift Code
 and use a destination location identifier.
 
+<aside class="notice">
+Disbursement points pending for specifying rather than banking details where the money is to
+be collected (i.e. pick up at a specific shop in Zimbabwe).
+</aside>
+
+<aside class="notice">
+Need to look at getting GPS co-ordinates of where the transaction occurred for Forex.
+</aside>
+
 ## List Forex Recipients
 
 ```shell
