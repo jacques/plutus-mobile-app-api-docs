@@ -1,24 +1,20 @@
 # Forex
 
-There are a number of things to cater for with Forex.
+Forex recipients are now a manual process.  This will change at a later date to
+using an API to the forex supplier.
 
- * Destination countries coming online.  For the testing of the app we are using:
-    - Bangladesh (BD)
-    - Botswana (BW)
-    - Malawi (MW)
-    - Mozambique (MZ)
-    - Zimbabwe (ZW)
-
-Destination cashout points pending from Tim which may replace the requirement for a Swift Code
-and use a destination location identifier.
+Initially we are supporting sending to a bank account.  Later once we have information support for sending to a destination cashpoint or another wallet provider is going to be supported.
 
 <aside class="notice">
-Disbursement points pending for specifying rather than banking details where the money is to
-be collected (i.e. pick up at a specific shop in Zimbabwe).
+Disbursement cashspoints pending for specifying rather than banking details where the money is to be collected (i.e. pick up at a specific shop in Zimbabwe).   Information is still pending here from Andre. Nothing has been provided for this option.
 </aside>
 
 <aside class="notice">
 Need to look at getting GPS co-ordinates of where the transaction occurred for Forex.
+</aside>
+
+<aside class="notice">
+Wallet providers is also pending from Andre.  Nothing has been provided for this option.
 </aside>
 
 ## List Forex Recipients
