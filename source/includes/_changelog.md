@@ -2,6 +2,11 @@
 
 The changelog mentions items changed in the documentation.
 
+## 2018-08-05
+
+ * Removed Forex Target countries and uploading KYC documents a for a recipient.
+ * Various field changes on <a href="#registering-a-forex-receipient">Registering a Forex Recipient</a>
+
 ## 2018-07-12
 
  * Removed the BongoTel Dialer issuing / listing.
