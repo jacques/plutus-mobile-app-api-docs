@@ -19,11 +19,11 @@ includes:
   - transfers
   - beneficiaries
   - p2ppayments
-  - forex
+#  - forex
   - standingorders
   - prepaid
-  - companies
-  - businessaccounts
+#  - companies
+#  - businessaccounts
 #  - agentterminal
   - errors
   - changelog
