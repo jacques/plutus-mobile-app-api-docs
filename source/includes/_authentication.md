@@ -2,10 +2,21 @@
 
 ## Intial Login for a user
 
-After installing the mobile app, a user would request that they be allowed to login using their credentials.  On first login, a ssh keypair
-is generated on the users device and the public key pair is submitted along with the fingerprint over which is then associated with the user.
-Should the user have Two Factor Authentication enabled, the user will then enter their TFA to authorise the adding of the ssh key pair to
-their account.
+Authenticate as a user to the Mobile APP API.  This replaces the more secure HTTP Signature method.
+
+> To authorize, use this code:
+
+```shell
+# With shell, you can just pass the correct header with each request
+curl -X POST "api_endpoint_here"
+  -H "Authorization: Token token=YOURTOKEN"
+  -H "Content-Type: application/json"
+  -d '{"username":"theuser12345":"password":"abcdefgh"}'
+```
+
+
+
+
 
 ## Using Session Tokens
 
