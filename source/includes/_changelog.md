@@ -2,6 +2,10 @@
 
 The changelog mentions items changed in the documentation.
 
+## 2018-08-18
+
+ * Removed Business Accounts, Companies, Forex and Agent Terminal components for now until this can be relooked.
+
 ## 2018-08-05
 
  * Removed Forex Target countries and uploading KYC documents a for a recipient.
