@@ -19,7 +19,7 @@ includes:
   - transfers
   - beneficiaries
   - p2ppayments
-#  - forex
+  - forex
   - standingorders
   - prepaid
 #  - companies
