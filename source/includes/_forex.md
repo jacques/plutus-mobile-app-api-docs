@@ -6,7 +6,9 @@ using an API to the forex supplier.
 Initially we are supporting sending to a bank account.  Later once we have information support for sending to a destination cashpoint or another wallet provider is going to be supported.
 
 <aside class="notice">
-Disbursement cashspoints pending for specifying rather than banking details where the money is to be collected (i.e. pick up at a specific shop in Zimbabwe).   Information is still pending here from Andre. Nothing has been provided for this option.
+For transactions going to a cash point, Andre says the sender is SMS'ed a
+reference number for the recipient to be sent to collect the money from
+any of the cash points in the country.
 </aside>
 
 <aside class="notice">
@@ -14,7 +16,7 @@ Need to look at getting GPS co-ordinates of where the transaction occurred for F
 </aside>
 
 <aside class="notice">
-Wallet providers is also pending from Andre.  Nothing has been provided for this option.
+Wallet providers is also pending from Andre.  Nothing has been provided for this option.  Not enabling this option via the API.
 </aside>
 
 ## List Forex Recipients
