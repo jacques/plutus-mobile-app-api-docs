@@ -76,7 +76,7 @@ reference2 | string(32) | Reference displayed on the beneficiaries bank transact
 ## Create Beneficiary
 
 ```shell
-curl -X POST -d '{"name":"Vendor Name","bank_id":"1","branch_code":"000000","account_number":"53220000024","account_type":"1","reference1":"Vendor Name","reference2":"My Bill ID","notification_email_address":"support@imogo.co.za","notifcation_mobile_number":""}' "https://127.0.0.1.xip.io/api/v1/users/d19bff36-4733-11e5-946b-9ba904d8238e/beneficiaries"
+curl -X POST -d '{"name":"Vendor Name","bank_id":"1","branch_code":"000000","account_number":"53220000024","account_type":"1","reference1":"Vendor Name","reference2":"My Bill ID","notification_email_address":"support@imogo.co.za","notification_mobile_number":""}' "https://127.0.0.1.xip.io/api/v1/users/d19bff36-4733-11e5-946b-9ba904d8238e/beneficiaries"
   -H "Authorization: Token token=YOURTOKEN"
   -H "Content-Type: application/json"
 ```
