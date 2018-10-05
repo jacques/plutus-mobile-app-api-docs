@@ -5,6 +5,7 @@ The changelog mentions items changed in the documentation.
 ## 2018-01-05
 
  * Add destination_type field to <a href="#registering-a-forex-receipient">Registering a Forex Recipient</a>.
+ * Added <a href="#request-a-forex-quotation">Request a forex quotation</a>.
 
 ## 2018-08-18
 
