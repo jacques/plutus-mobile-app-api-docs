@@ -66,10 +66,11 @@ curl -X POST "https://127.0.0.1.xip.io/api/v1/mobile/users/c3797604-6e78-486e-be
   -d '{"first_name":"Joe","last_name":"Soap","country":"ZAF","account_number":"12345678912","deposit_taker_swift":"TESTZAJJ"}'
 ```
 
-This endpoint retrieves a collection of recipients including their status of whether the recipient has
-been approved for receiving forex.  Only approved users can receive forex so users in the pending state
-are pending approval (i.e. KYC / AML checks), users in approved status have been approved and users who
-are in the declined status have been declined.
+This endpoint adds a forex recipient to a users account.
+
+When a user specifies a collectionpoint as the destination_type then they will receive a SMS once Andre has loaded the forex
+transaction onto the vendors system and a quote is given and accepted for the user to send the reference number to the
+recipient to use when collecting the remittance.
 
 ### HTTP Request
 
@@ -89,6 +90,7 @@ first_name | string(64)
 last_name | string(64)
 country   | string(2) | ISO Country Code (i.e. BD for Bangladesh)
 mobile_number | integer | MSISDN of the recipient in E164 format minus the leading +
+destination_type | enum | bank or collection point -- note a wallet type is coming once Andre gets the specification for it.
 account_number | numeric | Account Number of the Recipient
 deposit_taker_swift | string(16) | SWIFT Code of the Deposit Taker
 
