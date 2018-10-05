@@ -20,7 +20,7 @@ includes:
   - beneficiaries
   - p2ppayments
   - forex
-  - standingorders
+#  - standingorders
   - prepaid
 #  - companies
 #  - businessaccounts
