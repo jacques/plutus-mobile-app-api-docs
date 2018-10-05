@@ -29,6 +29,7 @@ curl "https://127.0.0.1.xip.io/api/v1/mobile/users/d19bff36-4733-11e5-946b-9ba90
         }
     }
 }
+```
 
 This endpoint retrieves the configuration for the specific user.
 
