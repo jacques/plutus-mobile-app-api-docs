@@ -99,3 +99,37 @@ deposit_taker_swift | string(16) | SWIFT Code of the Deposit Taker
 Parameter | Type | Description
 --------- | ---- | -----------
 uuid | string (36) | UUID of the recipient
+
+## Request a Forex Quotation
+
+```shell
+curl -X POST "https://127.0.0.1.xip.io/api/v1/mobile/users/c3797604-6e78-486e-be5d-433f80cc4993/forex/f77f9ee1-585e-4d81-834a-971453dc74f7"
+  -H "Authorization: Token token=YOURTOKEN"
+  -H "Content-Type: application/json"
+  -d '{"amount":"50000"}'
+```
+
+This endpoint creates a request for a forex quotation.  Andre then messages the user with the deal particulars.
+
+### HTTP Request
+
+`POST https://127.0.0.1.xip.io/api/v1/mobile/users/<USER>/forex/recipients/<RECIPIENT>`
+
+### URL Parameters
+
+Parameter | Description
+--------- | -----------
+USER | The UUID of the user who is requesting the forex quotation
+RECIPIENT | The UUID of the recipient who you want forex quotation for
+
+### JSON Payload Parameters
+
+Parameter | Type | Description
+--------- | ---- | -----------
+amount | integer | Amount in South African Rand cents to send
+
+### Response Result Set
+
+Parameter | Type | Description
+--------- | ---- | -----------
+uuid | string(36) | UUID of the quote request
