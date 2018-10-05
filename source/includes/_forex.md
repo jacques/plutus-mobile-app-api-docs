@@ -109,7 +109,10 @@ curl -X POST "https://127.0.0.1.xip.io/api/v1/mobile/users/c3797604-6e78-486e-be
   -d '{"amount":"50000"}'
 ```
 
-This endpoint creates a request for a forex quotation.  Andre then messages the user with the deal particulars.
+This endpoint creates a request for a forex quotation.  Andre then messages the
+user with the deal particulars.  Once the live API is provided this will change
+to quoting in realtime and getting particulars and passing back to the
+customer.
 
 ### HTTP Request
 
