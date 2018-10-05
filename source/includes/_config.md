@@ -1,9 +1,9 @@
 # Configuration
 
-Various settings can be retreived post login.
+Various settings can be retrieved post login.
 
 <aside class="notice">
-Certain functionality needs to be able to be enabled for a user for example the Agent Terminal, Forex, dependant on Feature Flags.
+Certain functionality needs to be able to be enabled for a user for example the Agent Terminal, Forex, dependent on Feature Flags.
 </aside>
 
 ```json
