@@ -21,7 +21,7 @@ includes:
   - p2ppayments
   - forex
 #  - standingorders
-  - prepaid
+#  - prepaid
 #  - companies
 #  - businessaccounts
 #  - agentterminal
