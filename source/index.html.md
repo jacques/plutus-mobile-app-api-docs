@@ -25,6 +25,7 @@ includes:
 #  - companies
 #  - businessaccounts
 #  - agentterminal
+  - processing
   - errors
   - changelog
 
