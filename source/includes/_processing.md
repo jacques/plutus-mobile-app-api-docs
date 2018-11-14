@@ -46,6 +46,8 @@ USER | The UUID of the user who you want to upload a document for
 Parameter | Type | Description
 --------- | ---- | -----------
 document_type | integer | Indicates the type of document.  See <a href="#document-types">Document Types</a> below.
+file_hash | string | SHA256 of the image contents
+url | string | URL to request the images from.  It should be from https://imgdocs.blob.core.windows.net/
 
 ### Response Result Set
 
