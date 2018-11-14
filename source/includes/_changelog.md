@@ -2,7 +2,11 @@
 
 The changelog mentions items changed in the documentation.
 
-## 2018-01-05
+## 2018-11-13
+
+ * Add customer document upload for user via Azure Microservice for <a href="/#upload-a-document-customer">Upload a Document (customer)</a>.
+
+## 2018-10-05
 
  * Add destination_type field to <a href="#registering-a-forex-receipient">Registering a Forex Recipient</a>.
  * Added <a href="#request-a-forex-quotation">Request a forex quotation</a>.
