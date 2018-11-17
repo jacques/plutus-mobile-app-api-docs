@@ -1,5 +1,11 @@
 # Authentication
 
+<aside class="notice">
+If a user has been logged out on the platform (i.e. we have locked the users account) the users token will no longer be valid.
+A HTTP Status code 401 is returned with the body containing HTTP Token: Access denied.  The state should change to the user
+not being logged into the mobile application.
+</aside>
+
 ## Intial Login for a user
 
 Authenticate as a user to the Mobile APP API.  This replaces the more secure HTTP Signature method.
