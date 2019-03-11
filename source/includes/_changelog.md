@@ -2,6 +2,10 @@
 
 The changelog mentions items changed in the documentation.
 
+## 2019-03-11
+
+ * Disable SMS on user creation.  Return username and password on user creation.
+
 ## 2018-11-13
 
  * Add customer document upload for user via Azure Microservice for <a href="/#upload-a-document-customer">Upload a Document (customer)</a>.
