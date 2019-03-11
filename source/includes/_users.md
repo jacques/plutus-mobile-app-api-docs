@@ -21,7 +21,9 @@ curl -X POST "https://127.0.0.1.xip.io/api/v1/mobile/users"
   "status":"ok",
   "details":{
     "uuid":"2b1c1f24-c5ff-11e5-99c3-5a8f9bcf73ec",
-    "account_number":"53224172946"
+    "account_number":"53224172946",
+    "username": "timot12345",
+    "password": "badcaffe"
   }
 }
 ```
