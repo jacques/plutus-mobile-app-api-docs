@@ -2,6 +2,10 @@
 
 The changelog mentions items changed in the documentation.
 
+## 2019-03-14
+
+ * Document that we don't require an API Key for user creation seeing that users can decompile a mobile app and retrieve the key.
+
 ## 2019-03-11
 
  * Disable SMS on user creation.  Return username and password on user creation.
