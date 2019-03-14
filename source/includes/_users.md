@@ -51,7 +51,7 @@ id_document_number | string (32) | The document number for the given identificat
 passport_expiration_date | date | Date of expiration of the passport **REQUIRED IF id_type IS PASSPORT**
 passport_country | string (2) | [ISO 3166 Alpha 2 code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) for the country **REQUIRED IF id_type IS PASSPORT**
 asylum_expiration_date | date | Date of expiration of the South African Asylum Document **REQUIRED IF id_type IS ZAASYLUM**
-address1_type | enum | **home** for home address / **work** for employers address
+address1_type | enum | **home** for home address / **work** for employers address.  Users should be FICA's to their home addresses.
 address1_street1 | string (64) | Street Address
 address1_street2 | string (64) | Street Address cont. **OPTIONAL**
 address1_suburb | string (64) | Suburb
@@ -62,8 +62,9 @@ address1_country | string (2) | [ISO 3166 Alpha 2 code](https://en.wikipedia.org
 mobile_number | integer | MSISDN for the user in E.164 format (minus the leading +)
 email_address | string(64) | Email address of the user
 
-### Defaults
+### Defaults (optional parameters)
 
 Parameter | Type | Default | Description
 --------- | ---- | ------- | -----------
 assign_to_agent | string(36) | null | Specifies which agent should be assigned to the user being created
+promocode | string(36)| null | Specifies the promo code to use when the user is created.  This is used to change the agency (i.e. register the user under a specific agents structure).
