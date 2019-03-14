@@ -7,9 +7,12 @@ FICA process if it is not a product specific wallet (i.e. for the dialler produc
 requires normal wallet functionality to receive and spend via multiple partners this still needs to be story boarded with
 Tim.
 
+<aside class="notice">
+Creating a user does not require authentication.
+</aside>
+
 ```shell
 curl -X POST "https://127.0.0.1.xip.io/api/v1/mobile/users"
-  -H "Authorization: Token token=YOURTOKEN"
   -H "Content-Type: application/json"
   -d '{"title":"MRS","first_name":"CHERYL","last_name":"SERFONTEIN","date_of_birth":"1970-01-01","gender":"f","id_type":"ZAID","id_document_number":"7001010101081","address1_type":"work","address1_street1":"7th Floor, West Tower, Canal Walk Shopping Center","address1_street2":"Century City Boulevard, Century City","address1_suburb":"Milnerton","address1_city":"Cape Town","address1_province":"ZA-WC","address1_postalcode":"7490","address1_country":"ZA",mobile_number":"08012345679"}'
 ```
