@@ -15,14 +15,27 @@ Authenticate as a user to the Mobile APP API.  This replaces the more secure HTT
 ```shell
 # With shell, you can just pass the correct header with each request
 curl -X POST "api_endpoint_here"
-  -H "Authorization: Token token=YOURTOKEN"
   -H "Content-Type: application/json"
   -d '{"username":"theuser12345":"password":"abcdefgh"}'
 ```
 
+> The above command returns JSON structured like this:
 
-
-
+```json
+{
+  "status":"ok",
+  "details":{
+    "message":"Welcome to IMOGO",
+    "details":{
+      "token":"5fea4675-0b39-417d-82a8-72b7f3129c83",
+      "uuid":"3382bc3a-aadb-11e4-b077-2b4637e8638c",
+      "first_name":"Timothy",
+      "last_name":"Colmantd",
+      "fica_status":2
+    }
+  }
+}
+```
 
 ## Using Session Tokens
 
