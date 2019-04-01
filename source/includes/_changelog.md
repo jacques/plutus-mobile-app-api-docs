@@ -2,6 +2,14 @@
 
 The changelog mentions items changed in the documentation.
 
+## 2019-04-01
+
+ * Added fields required by FNB for issuing an eWallet Pro VISA Card when creating a user:
+    * nationality
+    * ethnic_group_id
+    * passport_start_date
+    * asylum_start_date
+
 ## 2019-03-14
 
  * Document that we don't require an API Key for user creation seeing that users can decompile a mobile app and retrieve the key.

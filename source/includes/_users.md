@@ -48,8 +48,10 @@ date_of_birth | date | Date of birth of the user
 gender | string (1) | Gender of the user (i.e. f == female / m == male)
 id_type | string | Identification Document Type (ZAID == South African ID / PASSPORT = Passport / ZAASYLUM = South African Asylum Document)
 id_document_number | string (32) | The document number for the given identification type
+passport_start_date | date | Date of the start of the passport **REQUIRED IF id_type IS PASSPORT** (required by FNB)
 passport_expiration_date | date | Date of expiration of the passport **REQUIRED IF id_type IS PASSPORT**
 passport_country | string (2) | [ISO 3166 Alpha 2 code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) for the country **REQUIRED IF id_type IS PASSPORT**
+asylum_start_date | date | Date of the start of the South African Asylum Document **REQUIRED IF id_type IS ZAASYLUM** (required by FNB)
 asylum_expiration_date | date | Date of expiration of the South African Asylum Document **REQUIRED IF id_type IS ZAASYLUM**
 address1_type | enum | **home** for home address / **work** for employers address.  Users should be FICA's to their home addresses.
 address1_street1 | string (64) | Street Address
@@ -61,6 +63,8 @@ address1_postalcode | string (4) | Postal Codes for South Africa
 address1_country | string (2) | [ISO 3166 Alpha 2 code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) for the country
 mobile_number | integer | MSISDN for the user in E.164 format (minus the leading +)
 email_address | string(64) | Email address of the user
+nationality | string(2) | [ISO 3166 Alpha 2 code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) for the nationality of the user (required by FNB)
+ethnic_group | integer | (1 = White | 2 = Asian | 3 = Coloured | 4 = Black | 5 = Unknown) (required by FNB)
 
 ### Defaults (optional parameters)
 
