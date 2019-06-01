@@ -72,3 +72,57 @@ Parameter | Type | Default | Description
 --------- | ---- | ------- | -----------
 assign_to_agent | string(36) | null | Specifies which agent should be assigned to the user being created
 promocode | string(36)| null | Specifies the promo code to use when the user is created.  This is used to change the agency (i.e. register the user under a specific agents structure).
+
+## Fetch User Profile Information
+
+```shell
+curl -X GET "https://127.0.0.1.xip.io/api/v1/mobile/users/me"
+  -H "Content-Type: application/json"
+```
+
+> The above command returns JSON structured like this:
+
+```json
+{
+  "status":"ok",
+  "details":{
+    "uuid":"2b1c1f24-c5ff-11e5-99c3-5a8f9bcf73ec",
+    "title": "MR",
+    "first_name":"Timothy",
+    "last_name": "Colman",
+    "date_of_birth": "1963-11-02",
+    "gender": "m",
+    "id_type": "ZAID",
+    "id_document_number": "631102XXXXXXX",
+    "passport_start_date": null,
+    "passport_expiration_date": null,
+    "passport_country": null,
+    "asylum_start_date": null,
+    "asylum_expiration_date": null,
+    "fica_status": 2,
+    "address1_street1": "1st Floor, Allianz House",
+    "address1_street2": "52 St Georges all",
+    "address1_suburb": "Cape Town CBD",
+    "address1_city": "Cape Town",
+    "address1_province": "ZA-WC",
+    "address1_postalcode": 8000,
+    "mobile_number": "27811234567",
+    "mobile_number_country": "ZA",
+    "home_phone_number": null,
+    "home_phone_number_country": null,
+    "work_phone_number": null,
+    "work_phone_number_country": null,
+    "ethnic_group": 1,
+    "marital_status": null
+  }
+}
+```
+
+### HTTP Request
+
+`GET https://127.0.0.1.xip.io/api/v1/mobile/me`
+
+This endpoint fetches information on the customer so the user can be prompted to provide additional information (i.e. like maritial status when a user is signingup for a policy or
+ethnic group when signing up for a debit card).
+
+
