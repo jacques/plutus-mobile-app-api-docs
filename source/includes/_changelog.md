@@ -2,6 +2,10 @@
 
 The changelog mentions items changed in the documentation.
 
+## 2019-06-01
+
+ * Document how to obtain information we have on a customer to enable prompting for specific information when a user signs up for additional products (i.e. maritial status for a funeral plan or ethnic group for a FNB eWalletPro VISA card).
+
 ## 2019-04-01
 
  * Added fields required by FNB for issuing an eWallet Pro VISA Card when creating a user:
