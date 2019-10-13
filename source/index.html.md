@@ -5,7 +5,8 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - shell
 
 toc_footers:
-  - <a href='https://secure.imogo.co.za/'>Production Login</a>
+  - <a href='https://secure.imogo.co.za/'>Production (IMOGO) Login</a>
+  - <a href='https://secure.iamfin.com/'>Production (I AM) Login</a>
   - <a href='https://secure.ogomi.co.za/'>Staging Login</a>
   - <a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a>
 
@@ -25,6 +26,7 @@ includes:
 #  - companies
 #  - businessaccounts
 #  - agentterminal
+  - products
   - processing
   - errors
   - changelog
